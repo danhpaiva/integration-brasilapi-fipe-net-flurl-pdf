@@ -4,9 +4,8 @@
 [![Clean Architecture](https://img.shields.io/badge/Architecture-Clean-green.svg)](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Sistema de consulta de preços da Tabela FIPE integrado à [BrasilAPI](https://brasilapi.com.br/). O projeto consome dados em tempo real, exibe em uma interface responsiva e gera automaticamente um relatório executivo em PDF na área de trabalho do usuário.
-
-
+Sistema de consulta de preços da Tabela FIPE integrado à [BrasilAPI](https://brasilapi.com.br/). 
+O projeto consome dados em tempo real, exibe em uma interface responsiva e gera automaticamente um relatório executivo em PDF na área de trabalho do usuário.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -35,7 +34,7 @@ O projeto foi construído seguindo os princípios da **Clean Architecture** (Arq
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/danhpaiva/integration-brasilapi-fipe-net-flurl-pdf.git](https://github.com/danhpaiva/integration-brasilapi-fipe-net-flurl-pdf.git)
+    git clone https://github.com/danhpaiva/integration-brasilapi-fipe-net-flurl-pdf.git
     
     cd integration-brasilapi-fipe-net-flurl-pdf
     ```
@@ -47,11 +46,11 @@ O projeto foi construído seguindo os princípios da **Clean Architecture** (Arq
 
 3.  **Execute o projeto Web:**
     ```bash
-dotnet run --project Integration.BrasilApi.Fipe.Api/Integration.BrasilApi.Fipe.Api.csproj
+    dotnet run --project Integration.BrasilApi.Fipe.Api/Integration.BrasilApi.Fipe.Api.csproj
     ```
 
 4.  **Acesse no navegador:**
-    `https://localhost:7102` (ou a porta indicada no console).
+    `https://localhost:7102`
 
 ## 🧪 Testes
 
@@ -73,5 +72,5 @@ O sistema utiliza a biblioteca **QuestPDF** para gerar um documento executivo de
 
 ### Exemplo de execução via CLI para gerar o relatório:
 ```bash
-dotnet run --project Integration.BrasilApi.Fipe.Api
+dotnet run --project Integration.BrasilApi.Fipe.Api/Integration.BrasilApi.Fipe.Api.csproj
 ```
