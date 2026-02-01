@@ -1,3 +1,7 @@
+using Integration.BrasilApi.Fipe.Domain.Interfaces;
+using Integration.BrasilApi.Fipe.Infrastructure.Services;
+using QuestPDF.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +9,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+// Configuração da Licença do QuestPDF
+QuestPDF.Settings.License = LicenseType.Community;
+
+builder.Services.AddControllersWithViews();
+
+// Injeção de Dependência da Camada de Service/Infra
+builder.Services.AddScoped<IFipeService, FipeService>();
 
 var app = builder.Build();
 
