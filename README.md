@@ -74,10 +74,3 @@ O sistema utiliza a biblioteca **QuestPDF** para gerar um documento executivo de
 ```bash
 dotnet run --project Integration.BrasilApi.Fipe.Api
 ```
-
----
-
-### 💡 Dicas Finais do Sênior:
-
-1.  **Imagens:** Se você subir para o GitHub, tire um print da tela do navegador e outro do PDF gerado. Coloque-os em uma pasta `img` e referencie no README. Isso "vende" muito bem o seu peixe.
-2.  **Licença:** Lembre-se que o QuestPDF é *open-source* sob a licença Community para pequenos projetos, o que incluímos no `Program.cs` e nos testes.
