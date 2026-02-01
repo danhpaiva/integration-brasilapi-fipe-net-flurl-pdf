@@ -1,36 +1,64 @@
 ﻿@model Integration.BrasilApi.Fipe.Domain.Models.VeiculoFipeResponse
 
-@{
-    ViewData["Title"] = "Avaliação de Veículo";
-}
-
-<div class="container mt-5">
-    <div class="card shadow-sm">
-        <div class="card-header bg-dark text-white">
-            <h3 class="mb-0">Resultado da Consulta FIPE</h3>
+<div class="container mt-4 mt-md-5">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-dark text-white py-3">
+            <h3 class="mb-0 fs-5 fs-md-3 text-center text-md-start">
+                <i class="bi bi-info-circle me-2"></i>Resultado da Consulta
+            </h3>
         </div>
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-6">
-                    <p><strong>Marca:</strong> @Model.Marca</p>
-                    <p><strong>Modelo:</strong> @Model.Modelo</p>
-                    <p><strong>Ano/Modelo:</strong> @Model.AnoModelo</p>
-                    <p><strong>Combustível:</strong> @Model.Combustivel (@Model.SiglaCombustivel)</p>
+        <div class="card-body p-4">
+            <div class="row gy-4">
+                @* gy-4 adiciona espaçamento vertical no mobile *@
+
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <p class="mb-1 text-muted small uppercase">Marca</p>
+                    <p class="h5 fw-bold">@Model.Marca</p>
+
+                    <p class="mb-1 text-muted small mt-3">Modelo</p>
+                    <p class="h5">@Model.Modelo</p>
+
+                    <div class="d-flex justify-content-center justify-content-md-start gap-3 mt-3">
+                        <div>
+                            <p class="mb-0 text-muted small">Ano</p>
+                            <span class="badge bg-secondary">@Model.AnoModelo</span>
+                        </div>
+                        <div>
+                            <p class="mb-0 text-muted small">Combustível</p>
+                            <span class="badge bg-info text-dark">@Model.Combustivel</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 border-start">
-                    <h4 class="text-primary">Preço Médio: @Model.Valor</h4>
-                    <p class="text-muted">Referência: @Model.MesReferencia</p>
-                    <p class="small text-secondary">Código FIPE: @Model.CodigoFipe</p>
+
+                @* A linha vertical agora só aparece no Desktop (border-md-start) *@
+                <div class="col-12 col-md-6 border-md-start text-center text-md-start">
+                    <div class="ps-md-4">
+                        <p class="mb-1 text-muted small uppercase">Preço Médio de Mercado</p>
+                        <h2 class="text-primary fw-bold display-6">@Model.Valor</h2>
+
+                        <div class="mt-4 pt-2 border-top">
+                            <p class="small text-secondary mb-1">
+                                <strong>Referência:</strong> @Model.MesReferencia
+                            </p>
+                            <p class="small text-secondary">
+                                <strong>Código FIPE:</strong> @Model.CodigoFipe
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="alert alert-success mt-4">
-                <i class="bi bi-file-earmark-pdf"></i>
-                Um relatório PDF detalhado foi gerado e salvo na sua área de trabalho.
+            <div class="alert alert-success mt-4 d-flex align-items-center" role="alert">
+                <i class="bi bi-check-circle-fill me-2 fs-4"></i>
+                <div>
+                    Relatório PDF gerado com sucesso na Área de Trabalho!
+                </div>
             </div>
         </div>
-        <div class="card-footer">
-            <a asp-action="Index" class="btn btn-outline-secondary">Nova Consulta</a>
+        <div class="card-footer bg-white p-3 text-center text-md-start">
+            <a asp-action="Index" class="btn btn-outline-dark w-100 w-md-auto">
+                <i class="bi bi-arrow-left me-1"></i> Nova Consulta
+            </a>
         </div>
     </div>
 </div>
