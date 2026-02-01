@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Project Path="Integration.BrasilApi.Fipe.Api/Integration.BrasilApi.Fipe.Api.csproj" Id="648db213-cc46-4c95-a91c-f497807b8e75" />
+  <Project Path="Integration.BrasilApi.Fipe.Domain/Integration.BrasilApi.Fipe.Domain.csproj" Id="72bf697a-cec1-4adb-bfcf-87aae3b1b2e0" />
+  <Project Path="Integration.BrasilApi.Fipe.Infrastructure/Integration.BrasilApi.Fipe.Infrastructure.csproj" Id="9be64c05-cd59-406c-887c-5991003ef000" />
+  <Project Path="Integration.BrasilApi.Fipe.Test/Integration.BrasilApi.Fipe.Test.csproj" Id="e0df6fd0-0f17-4a11-993c-868c58d89874" />
+</Solution>

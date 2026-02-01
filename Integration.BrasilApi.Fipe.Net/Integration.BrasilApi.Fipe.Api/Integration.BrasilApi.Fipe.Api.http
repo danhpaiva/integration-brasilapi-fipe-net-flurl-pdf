@@ -1,0 +1,6 @@
+@Integration.BrasilApi.Fipe.Api_HostAddress = http://localhost:5130
+
+GET {{Integration.BrasilApi.Fipe.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
