@@ -30,6 +30,10 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Fipe}/{action=Index}/{id?}");
+
 app.MapControllers();
 
 app.Run();
