@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.2" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
     <PackageReference Include="xunit" Version="2.9.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />
@@ -17,6 +18,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Integration.BrasilApi.Fipe.Domain\Integration.BrasilApi.Fipe.Domain.csproj" />
     <ProjectReference Include="..\Integration.BrasilApi.Fipe.Infrastructure\Integration.BrasilApi.Fipe.Infrastructure.csproj" />
+	<PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.0" />
+	<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.0" />
   </ItemGroup>
 
   <ItemGroup>
