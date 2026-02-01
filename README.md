@@ -35,8 +35,9 @@ O projeto foi construído seguindo os princípios da **Clean Architecture** (Arq
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/Integration.BrasilApi.Fipe.Net.git](https://github.com/seu-usuario/Integration.BrasilApi.Fipe.Net.git)
-    cd Integration.BrasilApi.Fipe.Net
+    git clone [https://github.com/danhpaiva/integration-brasilapi-fipe-net-flurl-pdf.git](https://github.com/danhpaiva/integration-brasilapi-fipe-net-flurl-pdf.git)
+    
+    cd integration-brasilapi-fipe-net-flurl-pdf
     ```
 
 2.  **Restaure as dependências:**
@@ -46,7 +47,7 @@ O projeto foi construído seguindo os princípios da **Clean Architecture** (Arq
 
 3.  **Execute o projeto Web:**
     ```bash
-    dotnet run --project src/Integration.BrasilApi.Fipe.Api
+dotnet run --project Integration.BrasilApi.Fipe.Api/Integration.BrasilApi.Fipe.Api.csproj
     ```
 
 4.  **Acesse no navegador:**
